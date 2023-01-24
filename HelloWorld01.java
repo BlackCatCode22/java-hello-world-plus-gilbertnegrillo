@@ -1,6 +1,6 @@
-// Name of programmer:
-// Name of program:
-// Date started:
+// Name of programmer: Gilbert Negrillo
+// Name of program: Spr 23 Hello World
+// Date started: 1/24/23
 //
 // Description of program: Ask user for her first name and echo back in a greeting.
 // Input/Processing/Output: user input in console, output is System.out in console
@@ -13,20 +13,18 @@ import java.util.Scanner;
 public class HelloWorld01 {
     public static void main(String[] args) {
         // Variable declaration section.
-        String userName = "";
-        String greeting = "";
-        Scanner userInput = new Scanner(System.in);
-
-        System.out.println("\n\n");
+        String userName;
+        String greeting;
+        Scanner keyboard = new Scanner(System.in);
         // Input: get user name
-        System.out.println("Hello user, enter your preferred name: ");
-        userName = userInput.nextLine();
+        System.out.print("Hello user, enter your preferred name: ");
+        userName = keyboard.nextLine();
 
         // Processing: Create a greeting
-        greeting = "Hello " + userName + " how are you today?";
+        greeting = "Hello " + userName + ", " + "I hope you have a wonderful day! ";
 
         // Output:
-        System.out.println("\n\n" + greeting + "\n\n");
+        System.out.println(greeting);
 
     }
 }
